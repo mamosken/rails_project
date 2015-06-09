@@ -1,0 +1,22 @@
+<h1 class="div_titles">
+	   &nbsp; &nbsp; &nbsp; 
+	   Add a post
+</h1>
+<div class="div_signup">
+<%= form_for @post do |post| %>
+
+	<p>
+		<%= post.label :title %>
+		<%= post.text_field :title %>
+	</p>
+
+	<p>
+		<%= post.label :post %>
+		<%= post.text_area :p_content %>
+	</p>
+
+	<p class="submit_login">
+		<%= post.submit %>
+	</p>
+<% end %>
+</div>

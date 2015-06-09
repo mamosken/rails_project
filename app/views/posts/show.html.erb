@@ -1,0 +1,59 @@
+<div class="posts_show">
+	<p class="posts_show_title">
+		<%= @post.title %>
+	</p>
+
+	<p class="posts_show_body">
+		<%= @post.p_content %>
+	</p>
+
+	<p>
+		<%= @post.user.username %>
+	</p>
+	</hr>
+
+	<% if current_user and current_user == @post.user %>
+		<%= link_to 'Delete Post?', post_path, method: :delete %>
+	<% end %>
+
+
+	<% if current_user %>
+		<h5>
+			Post a comment below!
+		</h5>
+		
+		<%= form_for [@post, @comment], remote: true do |comment| %>
+			<%= comment.text_area :body %>
+
+			<p>
+				<%= comment.submit %>
+			</p>
+		<% end %>
+	<% else %>
+		<h5>
+			<%= link_to 'Login', login_path %> to comment!
+		</h5>
+	<% end %>
+
+<<<<<<< HEAD
+	<% @post.comments.reverse_each do |comment| %>
+			<p>
+			<%= comment.body %>
+			<br>
+				<%= comment.user.username %>
+			<br>
+				<%= comment.created_at %>
+			</p>
+
+	<% end %>
+=======
+	<section id="comments_container">
+		<% @comments.reverse_each do |comment| %>
+			<%= render partial: 'comments/comment', object: comment%>
+		<% end %>
+	</section>
+>>>>>>> master
+</div>
+
+
+<hr>
