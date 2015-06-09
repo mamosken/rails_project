@@ -1,0 +1,10 @@
+[ 2015-06-09 10:53:10.8919 45388/0x7fff72e9e300 age/Wat/Main.cpp:1268 ]: Starting PassengerAgent watchdog...
+[ 2015-06-09 10:53:10.9154 45390/0x7fff72e9e300 age/Hel/Main.cpp:963 ]: Starting PassengerAgent server...
+[ 2015-06-09 10:53:10.9165 45390/0x7fff72e9e300 age/Hel/Main.cpp:252 ]: PassengerAgent server running in multi-application mode.
+[ 2015-06-09 10:53:10.9277 45390/0x7fff72e9e300 age/Hel/Main.cpp:713 ]: PassengerAgent server online, PID 45390
+[ 2015-06-09 10:53:10.9447 45392/0x7fff72e9e300 age/Log/Main.cpp:443 ]: Starting PassengerAgent logger...
+[ 2015-06-09 10:53:10.9467 45392/0x7fff72e9e300 age/Log/Main.cpp:324 ]: PassengerAgent logger online, PID 45392
+App 45405 stdout: 
+App 45418 stdout: 
+App 45430 stdout: 
+[ 2015-06-09 10:58:33.4093 45390/0x10f053000 age/Hel/Main.cpp:800 ]: Disconnecting long-running connections for process 45418, application /Users/marcelamosken/Documents/github/rails_blog 2/public (development)#default
